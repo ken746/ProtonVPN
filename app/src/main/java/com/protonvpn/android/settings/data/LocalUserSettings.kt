@@ -81,7 +81,7 @@ data class LocalUserSettings(
     val mtuSize: Int = 1375,
     val netShield: NetShieldProtocol = NetShieldProtocol.ENABLED_EXTENDED,
     val protocol: ProtocolSelection = ProtocolSelection.SMART,
-    val randomizedNat: Boolean = true,
+    val randomizedNat: Boolean = false,
     @Deprecated("used only for migration") val secureCore: Boolean = false, // Value needed only for migrated profiles.
     val splitTunneling: SplitTunnelingSettings = SplitTunnelingSettings(),
     val telemetry: Boolean = true,
